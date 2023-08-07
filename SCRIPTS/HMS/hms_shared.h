@@ -59,7 +59,7 @@ void setupParms(Int_t RunNumber) {
 }
 
 void setupApparatus() {
-  // Add trigger apparatus
+  /* Add trigger apparatus
   THaApparatus* TRG = new THcTrigApp("T", "TRG");
   gHaApps->Add(TRG);
   // Add trigger detector to trigger apparatus
@@ -68,7 +68,8 @@ void setupApparatus() {
   // Add helicty (wmhenry 6/22/23)
   //  THcHelicity* helicity = new THcHelicity("helicity", "Helicity Detector");
   //  TRG->AddDetector(helicity);
-  // Set up the equipment to be analyzed.
+  */  
+// Set up the equipment to be analyzed.
   THcHallCSpectrometer* HMS = new THcHallCSpectrometer("H", "HMS");
   gHaApps->Add(HMS);
   // Add drift chambers to HMS apparatus

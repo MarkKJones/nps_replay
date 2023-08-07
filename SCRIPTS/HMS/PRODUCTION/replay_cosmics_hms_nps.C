@@ -19,10 +19,10 @@ void replay_cosmics_hms_nps(Int_t RunNumber=0, Int_t MaxEvent=0) {
   const char* RunFileNamePattern = "hms_all_%03d.dat.0";  //Raw data file name pattern
   //    const char* RunFileNamePattern = "hms_all_%05d.dat";  //Raw data file name pattern
   //    const char* RunFileNamePattern = "hms_all_%05d.dat";  //Raw data file name pattern
-  const char* ROOTFileNamePattern = "ROOTfiles/HMS/hms50k/hms_replay_production_%d_%d.root";
+  const char* ROOTFileNamePattern = "ROOTfiles/HMS/50k/hms_replay_production_%d_%d.root";
   TString ROOTFileName = Form(ROOTFileNamePattern, RunNumber, MaxEvent);
   //Specifics for the replay
-  TString odef_file = "DEF-files/HMS/PRODUCTION/hstackana_production_all.def";
+  TString odef_file = "DEF-files/HMS/PRODUCTION/mkj.def";
   TString cdef_file = "DEF-files/HMS/PRODUCTION/CUTS/hstackana_production_cuts.def";
   TString summary_file = Form("REPORT_OUTPUT/HMS/summary_production_%d_%d.report",
 			      RunNumber, MaxEvent);
